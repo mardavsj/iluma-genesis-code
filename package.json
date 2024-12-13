@@ -14,7 +14,6 @@
     "convex": "^1.17.3",
     "framer-motion": "^11.13.5",
     "lucide-react": "^0.468.0",
-    "monaco-editor": "^0.52.2",
     "next": "15.0.3",
     "react": "18.0.0",
     "react-dom": "18.0.0",
