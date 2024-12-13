@@ -84,7 +84,7 @@ function SnippetDetailPage() {
               beforeMount={defineMonacoThemes}
               options={{
                 minimap: { enabled: false },
-                fontSize: 16,
+                fontSize: 15,
                 readOnly: true,
                 automaticLayout: true,
                 scrollBeyondLastLine: false,
