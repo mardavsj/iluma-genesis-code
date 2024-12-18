@@ -68,7 +68,7 @@ function SnippetsPage() {
                         transition={{ delay: 0.2 }}
                         className="text-lg text-gray-400 mb-8"
                     >
-                        Explore a curated collection of code snippets from the community
+                        Explore a curated collection of code snippets from the community.
                     </motion.p>
                 </div>
 
