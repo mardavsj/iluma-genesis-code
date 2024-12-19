@@ -58,8 +58,12 @@ export function OutputPanelSkeleton() {
 export function EditorViewSkeleton() {
     return (
         <div className="space-y-6 p-4">
-            <EditorPanelSkeleton />
-            <OutputPanelSkeleton />
+            <div className="w-7/10">
+                <EditorPanelSkeleton />
+            </div>
+            <div className="w-3/10">
+                <OutputPanel/>
+            </div>
         </div>
     );
 }
