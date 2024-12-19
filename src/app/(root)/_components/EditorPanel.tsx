@@ -1,4 +1,5 @@
 "use client";
+
 import { useCodeEditorStore } from "@/store/useCodeEditorStore";
 import { useEffect, useState } from "react";
 import { defineMonacoThemes, LANGUAGE_CONFIG } from "../_constants";
@@ -118,7 +119,27 @@ function EditorPanel() {
               onChange={handleEditorChange}
               theme={theme}
               beforeMount={defineMonacoThemes}
-              onMount={(editor) => setEditor(editor)}
+              onMount = {(editor) => {
+                setEditor(editor);
+
+                const domNode = editor.getDomNode();
+                if (domNode) {
+                  domNode.addEventListener("wheel", (event: WheelEvent) => {
+                    const editorScrollable = domNode.querySelector(".monaco-scrollable-element");
+
+                    if (editorScrollable instanceof HTMLElement) {
+                      event.preventDefault();
+
+                      const scrollSpeedFactor = 10
+
+                      window.scrollBy({
+                        top: event.deltaY * scrollSpeedFactor,
+                        behavior: "smooth",
+                      })
+                    }
+                  })
+                }
+              }}
               options={{
                 minimap: { enabled: false },
                 fontSize,
