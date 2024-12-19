@@ -62,7 +62,7 @@ export function EditorViewSkeleton() {
                 <EditorPanelSkeleton />
             </div>
             <div className="w-3/10">
-                <OutputPanel/>
+                <OutputPanelSkeleton/>
             </div>
         </div>
     );
