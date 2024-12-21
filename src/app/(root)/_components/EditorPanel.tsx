@@ -59,30 +59,30 @@ function EditorPanel() {
 
   return (
     <div className="relative">
-      <div className="relative bg-[#12121a]/90 backdrop-blur rounded-xl border border-white/[0.05] p-6">
+      <div className="relative bg-[#12121a]/90 backdrop-blur lg:p-6 p-4">
         <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-3">
-            <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-[#1e1e2e] ring-1 ring-white/5">
+          <div className="flex items-center lg:gap-3 gap-1.5">
+            <div className="flex items-center justify-center lg:size-8 size-6 rounded-lg bg-[#1e1e2e] ring-1 ring-white/5">
               <Image src={"/" + language + ".png"} alt="Logo" width={24} height={24} />
             </div>
             <div>
               <h2 className="text-sm font-medium text-white">Code Editor</h2>
-              <p className="text-xs text-gray-500">Write and execute your code</p>
+              <p className="lg:text-[12px] text-[10px] text-gray-500">Write and execute your code</p>
             </div>
           </div>
-          <div className="flex items-center gap-3">
-            <div className="flex items-center gap-3 px-3 py-2 bg-[#1e1e2e] rounded-lg ring-1 ring-white/5">
-              <TypeIcon className="size-4 text-gray-400" />
-              <div className="flex items-center gap-3">
+          <div className="flex items-center lg:gap-3 gap-1.5">
+            <div className="flex items-center lg:gap-3 gap-1.5 px-3 py-2 bg-[#1e1e2e] rounded-lg ring-1 ring-white/5">
+              <TypeIcon className="lg:size-4 size-3.5 text-gray-400" />
+              <div className="flex items-center lg:gap-3 gap-1">
                 <input
                   type="range"
                   min="10"
                   max="24"
                   value={fontSize}
                   onChange={(e) => handleFontSizeChange(parseInt(e.target.value))}
-                  className="w-20 h-1 bg-gray-600 rounded-lg cursor-pointer"
+                  className="lg:w-20 w-16 h-1 bg-gray-600 rounded-lg cursor-pointer"
                 />
-                <span className="text-sm font-medium text-gray-400 min-w-[2rem] text-center">
+                <span className="lg:text-[15px] text-[13px] font-medium text-gray-400 min-w-[2rem] text-center">
                   {fontSize}
                 </span>
               </div>
@@ -102,11 +102,11 @@ function EditorPanel() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               onClick={handlePublishClick}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg overflow-hidden bg-gradient-to-r
+              className="inline-flex items-center lg:gap-2 gap-1 lg:px-4 px-2 py-2 rounded-lg overflow-hidden bg-gradient-to-r
                from-blue-500 to-blue-600 opacity-90 hover:opacity-100 transition-opacity"
             >
-              <ShareIcon className="size-4 text-white" />
-              <span className="text-sm font-medium text-white">Publish as Snippet</span>
+              <ShareIcon className="lg:size-4 size-3 text-white" />
+              <span className="lg:text-[15px] text-[13px] font-medium text-white">Publish as Snippet</span>
             </motion.button>
           </div>
         </div>

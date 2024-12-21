@@ -40,7 +40,7 @@ function LanguageSelector() {
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         onClick={() => setIsOpen(!isOpen)}
-        className={`group relative flex items-center gap-3 px-4 py-2.5 bg-[#1e1e2e]/80 
+        className={`group relative flex items-center lg:gap-3 gap-1.5 lg:px-4 px-2 lg:py-2.5 py-2 bg-[#1e1e2e]/80 
       rounded-lg transition-all 
        duration-200 border border-gray-800/50 hover:border-gray-700`}
       >
@@ -50,7 +50,7 @@ function LanguageSelector() {
           aria-hidden="true"
         />
 
-        <div className="size-6 rounded-md bg-gray-800/50 p-0.5 group-hover:scale-110 transition-transform">
+        <div className="lg:size-6 size-4 rounded-md bg-gray-800/50 p-0.5 group-hover:scale-110 transition-transform">
           <Image
             src={currentLanguageObj.logoPath}
             alt="programming language logo"
@@ -60,7 +60,7 @@ function LanguageSelector() {
           />
         </div>
 
-        <span className="text-gray-200 min-w-[80px] text-left group-hover:text-white transition-colors">
+        <span className="text-gray-200 min-w-[80px] lg:text-left lg:text-[15px] text-[13px] group-hover:text-white transition-colors">
           {currentLanguageObj.label}
         </span>
 
