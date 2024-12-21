@@ -15,14 +15,17 @@ function Footer() {
                     <Link href="/faq" className="text-gray-400 hover:text-gray-300 transition-colors">
                             FAQs
                         </Link>
-                        <Link href="/support" className="text-gray-400 hover:text-gray-300 transition-colors">
-                            Support
+                        <Link href="/about" className="text-gray-400 hover:text-gray-300 transition-colors">
+                            About
                         </Link>
                         <Link href="/privacy" className="text-gray-400 hover:text-gray-300 transition-colors">
                             Privacy
                         </Link>
                         <Link href="/terms" className="text-gray-400 hover:text-gray-300 transition-colors">
                             Terms
+                        </Link>
+                        <Link href="/contact" className="text-gray-400 hover:text-gray-300 transition-colors">
+                            Contact
                         </Link>
                     </div>
                 </div>
