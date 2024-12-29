@@ -32,6 +32,7 @@ export default function RootLayout({
     <ClerkProvider>
     <html lang="en">
       <head>
+          <meta name="google-adsense-account" content="ca-pub-1308401027139954"></meta>
           <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1308401027139954"
             crossOrigin="anonymous"></Script>
       </head>
