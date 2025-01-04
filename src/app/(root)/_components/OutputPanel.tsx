@@ -4,6 +4,7 @@ import { useCodeEditorStore } from "@/store/useCodeEditorStore";
 import { AlertTriangle, CheckCircle, Clock, Copy, Terminal } from "lucide-react";
 import { useState } from "react";
 import RunningCodeSkeleton from "./RunningCodeSkeleton";
+import RunButton from "./RunButton"
 
 function OutputPanel() {
   const { output, error, isRunning } = useCodeEditorStore();
@@ -48,12 +49,15 @@ function OutputPanel() {
             )}
           </button>
         )}
+
+        <RunButton/>
+
       </div>
 
       <div className="relative">
         <div
           className="relative bg-[#1e1e2e]/50 backdrop-blur-sm border border-[#313244] 
-        rounded-xl p-4 h-[600px] overflow-auto font-mono text-sm"
+        rounded-xl p-4 sm:h-[600px] h-[300px] overflow-auto font-mono text-sm"
         >
           {isRunning ? (
             <RunningCodeSkeleton />

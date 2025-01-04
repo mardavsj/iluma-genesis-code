@@ -40,7 +40,7 @@ function LanguageSelector() {
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         onClick={() => setIsOpen(!isOpen)}
-        className={`group relative flex items-center lg:gap-3 gap-1.5 lg:px-4 px-2 lg:py-2.5 py-2 bg-[#1e1e2e]/80 
+        className={`group relative flex items-center lg:gap-3 lg:px-4 px-2 lg:py-2.5 py-2 bg-[#1e1e2e]/80 
       rounded-lg transition-all 
        duration-200 border border-gray-800/50 hover:border-gray-700`}
       >

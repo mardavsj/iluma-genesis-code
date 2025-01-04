@@ -1,4 +1,9 @@
 import NavigationHeader from "@/components/NavigationHeader";
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions - Star Code"
+}
 
 const TermsPage = () => {
   return (
@@ -8,24 +13,24 @@ const TermsPage = () => {
       <h1 className="text-3xl font-bold mb-6 text-center">Terms and Conditions</h1>
       <ul className="list-disc pl-6 text-gray-400">
         <li className="mb-4">
-          <strong className="text-gray-300/90">Acceptance of Terms:</strong> Welcome to Genesis Code. By accessing or using our platform, you agree to abide by these Terms and Conditions. If you do not agree to any part of these terms, you may not use the Service.
+          <strong className="text-gray-300/90">Acceptance of Terms:</strong> Welcome to Star Code. By accessing or using our platform, you agree to abide by these Terms and Conditions. If you do not agree to any part of these terms, you may not use the Service.
         </li>
         <li className="mb-4">
-                      <strong className="text-gray-300/90">License to Use:</strong> We grant you a non-exclusive, non-transferable, limited license to access and use Genesis Code Editor for personal or commercial coding purposes.
+                      <strong className="text-gray-300/90">License to Use:</strong> We grant you a non-exclusive, non-transferable, limited license to access and use Star Code Editor for personal or commercial coding purposes.
           <ul className="list-disc pl-6 mt-2">
             <li>You may not sell, sublicense, or distribute the Service.</li>
             <li>You agree not to modify, reverse engineer, or disrupt the platform.</li>
           </ul>
         </li>
         <li className="mb-4">
-          <strong>User Responsibilities:</strong> When using Genesis Code Editor, you agree to:
+          <strong>User Responsibilities:</strong> When using Star Code Editor, you agree to:
           <ul className="list-disc pl-6 mt-2">
             <li>Use the editor lawfully and responsibly.</li>
             <li>Avoid creating or sharing harmful, malicious, or illegal content.</li>
             <li>Prevent unauthorized access to your account or local workspace.</li>
           </ul>
           <div className="text-blue-500/90">
-          Genesis Code Editor is not responsible for the content you create, share, or execute. Users retain responsibility for ensuring compliance with applicable laws.
+          Star Code Editor is not responsible for the content you create, share, or execute. Users retain responsibility for ensuring compliance with applicable laws.
           </div>
         </li>
         <li className="mb-4">
@@ -38,7 +43,7 @@ const TermsPage = () => {
                 <li>Contain viruses, malicious code, or harmful scripts.</li>
               </ul>
             </li>
-            <div className="text-blue-500/90">Genesis Code Editor reserves the right to remove or disable shared content if it violates these terms.</div>
+            <div className="text-blue-500/90">Star Code Editor reserves the right to remove or disable shared content if it violates these terms.</div>
           </ul>
         </li>
         <li className="mb-4">
@@ -51,7 +56,7 @@ const TermsPage = () => {
         <li className="mb-4">
           <strong>Limitation of Liability:</strong> To the extent permitted by law:
           <ul className="list-disc pl-6 mt-2">
-            <li>Genesis Code Editor is provided as is without warranties of any kind.</li>
+            <li>Star Code Editor is provided as is without warranties of any kind.</li>
             <li>We are not liable for any loss of code, data, or damages resulting from your use of the platform.</li>
           </ul>
         </li>

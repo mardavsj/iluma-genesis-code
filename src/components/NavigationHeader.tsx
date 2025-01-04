@@ -4,8 +4,8 @@ import Link from "next/link";
 
 function NavigationHeader() {
     return (
-        <div className="sticky top-0 z-50 w-full border-b border-gray-800/50 bg-gray-950/80 backdrop-blur-xl backdrop-saturate-150">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5" />
+        <div className="top-0 z-50 w-full lg:p-4 p-2 border-b border-gray-800/50 bg-gray-950/80 backdrop-blur-xl backdrop-saturate-150">
+            <div className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-blue-600 via-blue-800 to-gray-900" />
             <div className="max-w-7xl mx-auto px-4">
                 <div className="relative h-16 flex items-center justify-between">
                     <div className="flex items-center gap-8">
@@ -21,10 +21,10 @@ function NavigationHeader() {
 
                             <div className="relative">
                                 <span
-                                    className="block text-lg font-semibold bg-gradient-to-r
+                                    className="block lg:text-[20px] font-semibold bg-gradient-to-r
                  from-blue-400 via-blue-300 to-purple-400 text-transparent bg-clip-text"
                                 >
-                                    Genesis Code
+                                    Star Code
                                 </span>
                                 <span className="block text-xs text-blue-400/60 font-medium">
                                     Interactive Code Editor

@@ -4,7 +4,7 @@ import OutputPanel from "./_components/OutputPanel";
 
 export default function Home(){
     return (
-        <div className="min-h-screen bg-gradient-to-r from-blue-500">
+        <div className="min-h-screen bg-gradient-to-r from-blue-600">
             <div className="max-w-[1800px] mx-auto">
                 <Header/>
 

@@ -1,4 +1,9 @@
-import NavigationHeader from "@/components/NavigationHeader";
+import NavigationHeader from "@/components/NavigationHeader"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Contact Us - Star Code"
+}
 
 const ContactPage = () => {
   return (

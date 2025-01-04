@@ -42,7 +42,7 @@ function EditorPanel() {
   };
 
   const handleFontSizeChange = (newSize: number) => {
-    const size = Math.min(Math.max(newSize, 10), 24);
+    const size = Math.min(Math.max(newSize, 8), 24);
     setFontSize(size);
     localStorage.setItem("editor-font-size", size.toString());
   };
@@ -59,8 +59,8 @@ function EditorPanel() {
 
   return (
     <div className="relative">
-      <div className="relative bg-[#12121a]/90 backdrop-blur lg:p-6 p-4">
-        <div className="flex items-center justify-between mb-4">
+      <div className="relative bg-[#12121a]/90 backdrop-blur lg:p-6">
+        <div className="sm:flex items-center justify-between sm:mb-4 p-3">
           <div className="flex items-center lg:gap-3 gap-1.5">
             <div className="flex items-center justify-center lg:size-8 size-6 rounded-lg bg-[#1e1e2e] ring-1 ring-white/5">
               <Image src={"/" + language + ".png"} alt="Logo" width={24} height={24} />
@@ -76,7 +76,7 @@ function EditorPanel() {
               <div className="flex items-center lg:gap-3 gap-1">
                 <input
                   type="range"
-                  min="10"
+                  min="8"
                   max="24"
                   value={fontSize}
                   onChange={(e) => handleFontSizeChange(parseInt(e.target.value))}
@@ -121,7 +121,6 @@ function EditorPanel() {
               beforeMount={defineMonacoThemes}
               onMount = {(editor) => {
                 setEditor(editor);
-
                 const domNode = editor.getDomNode();
                 if (domNode) {
                   domNode.addEventListener("wheel", (event: WheelEvent) => {

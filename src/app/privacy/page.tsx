@@ -1,4 +1,9 @@
 import NavigationHeader from "@/components/NavigationHeader";
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: "Privacy Policy - Star Code"
+}
 
 const PrivacyPage = () => {
     return (
@@ -8,7 +13,7 @@ const PrivacyPage = () => {
                 <h1 className="text-3xl font-bold mb-6 text-center">Privacy Policy</h1>
                 <ul className="list-disc pl-6 text-gray-400">
                     <li className="mb-4">
-                        <strong className="text-gray-300/90">Introduction:</strong> Welcome to Genesis Code. This Privacy Policy explains how we collect, use, and protect your personal data when you use our platform.
+                        <strong className="text-gray-300/90">Introduction:</strong> Welcome to Star Code. This Privacy Policy explains how we collect, use, and protect your personal data when you use our platform.
                     </li>
                     <li className="mb-4">
                         <strong className="text-gray-300/90">Information We Collect:</strong> We collect personal information such as your email address during registration, as well as usage data like browsing information, pages visited, and interactions with the editor.
@@ -20,8 +25,8 @@ const PrivacyPage = () => {
                     <li className="mb-4">
                         <strong className="text-gray-300/90">How We Use Your Information:</strong> The data we collect is used to:
                         <ul className="list-disc pl-6 mt-2">
-                            <li>Provide and improve the functionality of Genesis Code Editor.</li>
-                            <li>Send updates, notifications, and promotional content if you’ve opted in.</li>
+                            <li>Provide and improve the functionality of Star Code Editor.</li>
+                            <li>Send updates, notifications, and promotional content if you have opted in.</li>
                             <li>Monitor and analyze usage patterns to enhance platform performance.</li>
                         </ul>
                     </li>
@@ -50,7 +55,7 @@ const PrivacyPage = () => {
                         <strong className="text-gray-300/90">Changes to This Privacy Policy:</strong> We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.
                     </li>
                     <li className="mb-4">
-                        <strong className="text-gray-300/90">Contact Us:</strong> If you have any questions or concerns regarding this Privacy Policy, please reach out to the creator of Genesis Code at: <a href="mailto:mardavjadaun113@gmail.com" className="text-blue-500">mardavjadaun113@gmail.com</a>
+                        <strong className="text-gray-300/90">Contact Us:</strong> If you have any questions or concerns regarding this Privacy Policy, please reach out to the creator of Star Code at: <a href="mailto:mardavjadaun113@gmail.com" className="text-blue-500">mardavjadaun113@gmail.com</a>
                     </li>
                 </ul>
             </div>
