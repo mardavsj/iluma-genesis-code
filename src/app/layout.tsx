@@ -26,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Star Code</title>
+        <meta name="google-adsense-account" content="ca-pub-1308401027139954"/>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1308401027139954" 
         crossOrigin="anonymous"></script>
       </head>
