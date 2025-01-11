@@ -81,6 +81,7 @@ function EditorPanel() {
                   value={fontSize}
                   onChange={(e) => handleFontSizeChange(parseInt(e.target.value))}
                   className="lg:w-20 w-16 h-1 bg-gray-600 rounded-lg cursor-pointer"
+                  aria-label="10"
                 />
                 <span className="lg:text-[15px] text-[13px] font-medium text-gray-400 min-w-[2rem] text-center">
                   {fontSize}
