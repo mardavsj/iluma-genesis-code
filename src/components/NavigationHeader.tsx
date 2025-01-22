@@ -26,7 +26,7 @@ function NavigationHeader() {
                                 >
                                     Star Code
                                 </span>
-                                <span className="block text-xs text-blue-400/60 font-medium">
+                                <span className="block text-sm text-blue-400/60 font-medium">
                                     Interactive Code Editor
                                 </span>
                             </div>
