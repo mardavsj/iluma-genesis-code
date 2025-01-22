@@ -34,7 +34,7 @@ const ContactPage = () => {
             Connect with us and fellow developers on Discord. Share ideas, ask questions, or collaborate on exciting projects:
           </p>
           <a
-            href="https://discord.gg/yourdiscordlink"
+            href="https://discord.gg/mWfFfTgS"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline"
