@@ -1,5 +1,5 @@
-import { Blocks } from "lucide-react";
-import Link from "next/link";
+import Link from "next/link"
+import { Blocks, Gamepad2 } from "lucide-react";
 
 function Footer() {
     return (
@@ -12,23 +12,13 @@ function Footer() {
                         <span className="lg:text-[17px] text-[14px]">For the developers, by the developers!</span>
                     </div>
 
-                    <div className="flex items-center justify-center text-center sm:gap-6 gap-2 sm:text-[15px] text-[14px]">
-                    <Link href="/faq" className="text-gray-400 hover:text-gray-300 transition-colors">
-                            FAQs
-                        </Link>
-                        <Link href="/about" className="text-gray-400 hover:text-gray-300 transition-colors">
-                            About
-                        </Link>
-                        <Link href="/privacy" className="text-gray-400 hover:text-gray-300 transition-colors">
-                            Privacy
-                        </Link>
-                        <Link href="/terms" className="text-gray-400 hover:text-gray-300 transition-colors">
-                            Terms
-                        </Link>
-                        <Link href="/contact" className="text-gray-400 hover:text-gray-300 transition-colors">
-                            Contact
-                        </Link>
-                    </div>
+                    <Link href={"https://iluma-stack-game.vercel.app"} className="relative group flex items-center lg:gap-2 gap-1 px-3 py-2 rounded-lg text-gray-300 bg-gray-800/50 hover:bg-blue-500/10 border border-gray-800 hover:border-blue-500/50 hover:shadow-lg transition-all duration-300 shadow-lg overflow-hidden" target="_blank">
+                        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <Gamepad2 className="lg:size-4 size-3.5 relative z-10 group-hover:rotate-3 transition-transform" />
+                        <span className="lg:text-[15px] text-[13px] font-medium relative z-10 group-hover:text-white transition-colors">
+                            Stack Game
+                        </span>
+                    </Link>                  
                 </div>
             </div>
         </footer>
